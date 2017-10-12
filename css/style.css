@@ -1,0 +1,141 @@
+/*
+Template: Xpect - Responsive HTML5 Template
+Author:Iqonicthemes 
+Design and Developed by: Iqonicthemes
+*/
+
+
+/*---------------------------------------------------------------------
+                               General
+-----------------------------------------------------------------------*/
+
+*, :after, :before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 100%; height: 100%; font-family: 'Open Sans', sans-serif; }
+body { font-size: 15px; line-height: 1.7; background-color: #001d29; color: #999; width: 100%; height: 100%; font-family: 'Open Sans', sans-serif; }
+body, figure { margin: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block }
+::selection { background: #001d29; color: #fff; }
+h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.5; margin: 0 0 30px; font-family: 'Aldrich', sans-serif; }
+h1, h2, h3 { margin-top: 20px; margin-bottom: 10px; }
+h4, h5, h6 { margin-top: 10px; margin-bottom: 10px }
+h1 { font-size: 36px }
+h2 { font-size: 30px }
+h3 { font-size: 24px }
+h4 { font-size: 18px }
+h5 { font-size: 14px }
+h6 { font-size: 12px }
+p { margin: 0 0 10px }
+a { text-decoration: none; color: #7fba00; }
+a:hover { text-decoration: none; color: #fff; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 0.2s; }
+
+/*---------------------------------------------------------------------
+                               Preloader
+-----------------------------------------------------------------------*/
+#mask { background-color: #f9f9f9; z-index: 10000; height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0;  }
+#loader {  position: absolute; left: 50%; top: 50%; background-image: url("../img/loading.gif"); background-repeat: no-repeat; background-position: center; margin: -100px 0 0 -100px;width: 200px; height: 200px; }
+
+
+.iq-btn-subscribe { background: #7fba00; color: #fff; border-radius: 0; padding: 12px 25px; border: none;  font-size: 16px; text-transform: uppercase; }
+.iq-btn-subscribe i { padding-left: 10px; }  
+.iq-btn-subscribe:hover { background: #fff; color: #7fba00; }
+
+/*---------------------------------------------------------------------
+                               Social Icon
+-----------------------------------------------------------------------*/
+.iq-social li { height: 40px; -webkit-transition: -webkit-transform .7s; -moz-transition: -moz-transform .7s; -ms-transition: -ms-transform .7s; -o-transition: -o-transform .7s; transition: transform .7s;  text-align: center; width: 40px; padding: 3px !important; border: 1px solid #fff; bottom: 5px; }
+.iq-social-media .iq-social li { position: relative; bottom: -75px; }
+.iq-social a { color: #ffffff !important;text-align: center; line-height: 32px; display: block; }
+.iq-social li:hover { border: 1px solid #7fba00; }
+.iq-social li:hover a { color: #7fba00 !important; }
+
+.form-control { background: transparent; height: 48px; border-radius: 0; color: #fff; }
+.form-control::-webkit-input-placeholder { /* Chrome */
+  color: #fff;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+.form-control:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #fff;
+  opacity: 1;
+}
+
+/*---------------------------------------------------------------------
+                               Slider
+-----------------------------------------------------------------------*/
+#iq-bg { padding: 0; backgroud-color: #001d29; width: 100%; height: 100%; display: block; overflow: hidden; }
+#iq-bg .carousel-fade .carousel-inner .item { opacity: 0; -webkit-transition-property: opacity; -moz-transition-property: opacity; -o-transition-property: opacity; transition-property: opacity; }
+#iq-bg .carousel-fade .carousel-inner .active { opacity: 1; }
+#iq-bg .carousel-fade .carousel-inner .active.left, #iq-bg .carousel-fade .carousel-inner .active.right { left: 0; opacity: 0; z-index: 1; }
+#iq-bg .carousel-fade .carousel-inner .next.left, #iq-bg .carousel-fade .carousel-inner .prev.right { opacity: 1; }
+#iq-bg .carousel-fade .carousel-control { z-index: 2; }
+#iq-bg .carousel, #iq-bg .carousel-inner, #iq-bg .carousel-inner .item { width: 100%; height: 100%; }
+
+/*---------------------------------------------------------------------
+                                Main Content
+-----------------------------------------------------------------------*/
+#main-content { top: 15%; position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; }
+.iq-caption { width: 50%; margin: 0 auto; text-align: center; color: #fff; }
+.iq-caption p { margin: 20px 0; color: #f2f2f2; }
+.title { display: block; font-size: 40px; margin: 15px 0; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+.cus-btn { position: relative; z-index: 1; }
+#footer { position: absolute; bottom: 20px; margin: 0 auto; left: 0; right: 0; }
+.countdown { color: #fff; display: inline-block; text-align: center; font-size: 30px; text-transform: uppercase; }
+.countdown > div { padding: 10px; border-radius: 3px; display: inline-block; }
+.countdown div > span { padding: 15px; border-radius: 3px; background: rgba(0, 0, 0, 0.4); display: inline-block; }
+.count-name { padding-top: 5px; font-size: 16px; font-weight: bold; }
+#social { position: absolute; bottom: 15px; right: 30px; }
+
+
+@media (max-width:767px) {
+    #main-content { top: 2%; }
+    .iq-caption { width: 100%; }
+    .iq-caption p { margin: 0 0 10px; font-size: 13px;}
+    .title { display: block; font-size: 20px; margin: 0 auto; letter-spacing: 5px; font-weight: normal; }
+    #footer { bottom: 50px; }
+    .countdown > div { padding: 5px; }
+    .countdown div > span { padding: 10px; }
+    .iq-social-media .iq-social li { bottom: -35px; }
+    .iq-subscribe-form { width: 90%; margin-left: 10px; }
+    .iq-btn-subscribe { margin-top: 0px; margin-left: -9%; margin-bottom: 30px; }
+    .iq-caption h1{ font-size: 40px !important; margin-bottom: 0; margin-top: 10px;}
+    .iq-caption .form-control{height: 35px; margin-bottom: 6px;}
+    .iq-caption .iq-btn-subscribe {padding: 8px 20px;font-size: 12px;}
+
+
+}
+@media only screen and (min-width:500px) and (max-width:599px) {
+    #main-content { top: 0%; }
+    .title { display: block; font-size: 20px; margin: -5px auto; letter-spacing: 5px; font-weight: normal; }
+    .iq-caption p { margin: 0 0 5px; }
+    .iq-subscribe-form { margin-left: 15px; }
+    .iq-btn-subscribe { margin-top: -9px; margin-left: -9%; }
+    #footer { bottom: -40px; }
+    .countdown { color: #fff; display: inline-block; text-align: center; font-size: 18px; }
+    .count-name { padding-top: 5px; font-size: 10px; }
+    .iq-social-media .iq-social li { bottom: 45px; }
+
+}
+@media only screen and (min-width:600px) and (max-width:699px) {
+    #main-content { top: -1%; }
+    .title { margin: -10px auto; }
+    .iq-subscribe-form { margin-left: 20px; }
+    .iq-btn-subscribe { margin-left: -8%; }
+    #footer { bottom: -40px; }
+    .iq-social-media .iq-social li { bottom: 45px; }
+}
+@media only screen and (min-width:700px) and (max-width:767px) {
+    .iq-subscribe-form { margin-left: 25px; }
+    .iq-btn-subscribe { margin-left: -7%; }
+
+    .iq-social-media .iq-social li { bottom: 45px; }
+}
+
+@media only screen and (max-width:480px) {
+#footer .countdown{font-size: 18px ;}
+
+}
